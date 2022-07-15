@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head'); %>
+ 
+
+<body class="container">
+  <%- include('../partials/header'); %>
+  
+  <main class="card">
+    <div class="searchResult" hidden="true">
+        <div class="card-header">Resultado:</div> 
+        <div id="apiResult" class="card-body">
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <p id="photoProfile">Foto do Perfil</p>
+                <p id="realName"></p>
+                <p id="urlLink">url</p>
+                <p id="country">País de Origem</p>
+                <p id="bestAlbum">Melhor Album</p>
+              </div>
+              <div class="col">              
+                <ol id="loveTracks">
+
+                  Loved Tracks</ol>
+              </div>
+              <div class="col">   
+                <ol id="loveAlbums">Top Albuns</ol>
+              </div>
+
+
+            </div>
+         </div>
+        <hr>  
+    </div>
+  </main>
+
+
+  
+ <%- include('../partials/footer') %>
+
+</body>
+</html>
