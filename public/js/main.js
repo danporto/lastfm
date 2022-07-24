@@ -1,9 +1,11 @@
 
-// require('../../app.js') 
+require('../../app.js') 
+console.log(process.env.API)
 
 
 const urlApi = "https://ws.audioscrobbler.com"
-const API = alert('Apaga este alert no código e coloca aqui a API Key que te passei no zap para teste') // process.env.API
+const API = process.env.API
+
 
 
 function visibleResult () {

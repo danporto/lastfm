@@ -1,9 +1,7 @@
 const express = require('express') // const express recebe uma requisição do módulo express
 const app = express() // app vai receber a função express de
 const path = require('path') 
-require('dotenv').config({
-  path: path.resolve(__dirname, '.env')
-})
+require('dotenv').config()
 
 // Static Files
 app.use(express.static('public'));
@@ -23,7 +21,6 @@ module.exports = app;
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.info(`Servidor Funcional, link: http://localhost:${port}`))
-
 
 
 
